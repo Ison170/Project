@@ -8,7 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <script src="index.js" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-69XFX59R5Q"></script>
     <link rel="stylesheet" href="index.css">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-69XFX59R5Q');
+    </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -18,38 +26,64 @@
     <div class="container">
         <div class="navbar">
           <a class="logo" href="index.html">Interior and Furniturs</a>
+         
           <ul class="nav-list">
+            <li><a class="logo"   href="info.html">About us</a></li>
             <li><a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
           </ul>
         </div>
       </div>
+
+      <!-- ---- --->
+
       
 
+        
+
+        <!--  -->
         <div class="hero">
             <div class="row">
                 <div class="hero-info">
                     <h5 class="timeless">Jcube</p>
-                        <h1>Interior Designs</h1>
+                        <h1>Interior and Furniture</h1>
                         <p>Transforming Spaces, Creating Lasting Impressions. Discover the Perfect Blend of Style and Functionality for Your Home. Elevate Your Interiors with Our Exquisite Collection. Crafted with Passion, Designed for Comfort. Experience the Art of Living.</p>
-                        <a href="" class="btn">Explore Now</a>
+                        <!-- <a href="" class="btn">Explore Now</a> -->
                 </div>
                 <div class="hero-image">
-                    <img src="images/hero-image.png">
+                    <img src="images/front.jpg" alt="Front Image" width="550" height="550">
+
                 </div>
             </div>
+        
+        </div>
+        <!-- -- -->
+     
+        <div class="hero1">
+            <div class="row1">
+                <div class="hero-info1">
+                    <!-- <h5 class="timeless">Jcube</p> -->
+                </div>
+                <div class="hero-image">
+                    <img src="images/flag10.jpg" alt="Front Image" width="1700" height="1200">
+
+                </div>
+            </div>
+        
         </div>
 
 
     <!-- Vedio -->
-
-   
+        <h2 class="title">Watch This Out!</h2>
         <div class="slideshow-container">
+            
+          
+          
             <button class="prev-button" onclick="plusDivs(-1)">&#10094;</button>
             <button class="next-button" onclick="plusDivs(1)">&#10095;</button>
-            <img class="mySlides" src="images/featured-1.jpg">
-            <img  class="mySlides" src="images/featured-2.jpg">
-            <img class="mySlides" src="images/featured-3.jpg">
-            <img class="mySlides" src="images/featured-4.jpg">
+            <!-- <img class="mySlides" src="images/flag1.jpg"> -->
+            <img  class="mySlides" src="images/flag2.jpg">
+            <!-- <img class="mySlides" src="images/flag5.jpg"> -->
+            <img class="mySlides" src="images/flag4.jpg">
             <!-- <video class="mySlides" src="video/video-1.mp4" controls></video>
             <video class="mySlides" src="video/video-2.mp4" controls></video>
             <video class="mySlides" src="video/video-3.mp4" controls></video>
@@ -63,20 +97,20 @@
         <div class="medium-container">
             <div class="row">
                 <div class="col-4">
-                    <img src="images/featured-1.jpg">
-                    <h4>Chair Paded Seat</h4>
+                    <img src="images/flag1.jpg">
+                    <h4>Dining table</h4>
                 </div>
                 <div class="col-4">
-                    <img src="images/featured-2.jpg">
-                    <h4>Chelvee Clock</h4>
+                    <img src="images/flag5.jpg">
+                    <h4>Miniature chairs</h4>
                 </div>
                 <div class="col-4">
-                    <img src="images/featured-3.jpg">
-                    <h4>Casper Chair</h4>
+                    <img src="images/flag4.jpg"  width="430" height="360">
+                    <h4>Sofa set</h4>
                 </div>
                 <div class="col-4">
-                    <img src="images/featured-4.jpg">
-                    <h4>Aqua Lamp</h4>
+                    <img src="images/flag2.jpg" width="430 " height="360">
+                    <h4>Restable chair</h4>
                 </div>
             </div>
         </div>
@@ -87,12 +121,12 @@
         <div class="medium-container">
             <div class="row">
                 <div class="col-4">
-                        <img src="images/shop-1.jpg">
+                        <img src="images/flag5.jpg">
                         <h4>Rubber Plant</h4>
                     </a>
                 </div>
                 <div class="col-4">
-                        <img src="images/shop-2.jpg">
+                        <img src="images/flag4.jpg " height="360">
                         <h4>Tea Kettle</h4>
                     </a>
                 </div>
@@ -172,11 +206,13 @@
         <footer>
             <div class="contact-section">
               <h3>We Want to Hear From You</h3>
-              <form class="contact-form" action="/contact" method="post">
+              <form class="contact-form" action="/index" method="post">
+                <label for="name">Name:</label>
+                <input type="name" id="name" name="name" placeholder="Enter your Name " required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email " pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
                 <label for="comments">Comments:</label>
-                <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+                <textarea id="message" name="message" placeholder="Enter your comments"></textarea>
                 <button type="submit">Submit</button>
               </form>
             </div>

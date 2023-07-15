@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+            color: #333333;
+            background-image: url('background-image.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #0066cc;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .contact-info {
+            margin-bottom: 40px;
+        }
+
+        .contact-info h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin: 0;
+        }
+
+        .owner-info {
+            margin-bottom: 40px;
+        }
+
+        .owner-info h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .owner-info p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 75%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 10px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #999999;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            background-image: url('stars.png');
+            animation: moveStars 60s linear infinite;
+        }
+
+        @keyframes moveStars {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -2000px 0;
+            }
+        }
+
+        .logo {
+            color: #333333;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        /* Color Styles */
+        .container {
+            background-color: #ffffff;
+        }
+
+        h1, h2 {
+            color: grey;
+        }
+
+        p {
+            color:black;
+        }
+
+        footer {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <div class="navbar">
+            <a class="logo" href="index.html">Back</a>
+        </div>
+        <h1>About Us</h1>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: contact@example.com</p>
+            <p>Contact Number: +1234567890</p>
+        </div>
+        <div class="owner-info">
+            <h2>Owner Information</h2>
+            <p>John Doe is the founder and CEO of our company. With over 10 years of experience in the industry, John is passionate about delivering exceptional products and services to our valued customers.</p>
+        </div>
+        <div class="map-container">
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789!2dlongitude!3dlatitude!4d0.0!5e0!3m2!1sen!2sus!4v1626243248487!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15548.021832069744!2d77.6438271!3d13.0353242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae172dcec4f1b7%3A0x523cf40021c3ff8a!2sHennur%20Gardens%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1689356581692!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
